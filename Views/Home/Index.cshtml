@@ -1,5 +1,47 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model SubscriptionRequest
 
+@{
+    ViewData["Title"] = "New Request";
+}
+<div class="container">
+    <h3>New Azure Subscription Request</h3>
+    <form method="POST">
+        <div class="form-group row">
+            <label asp-for="BusinessUnit" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-3">
+                <input asp-for="BusinessUnit" class="form-control"/>
+            </div>
+            
+        </div>
+        <div class="form-group row">
+            <label asp-for="Department" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-3">
+                <input asp-for="Department" class="form-control" />
+            </div>
+            
+        </div>
+        <div class="form-group row">
+            <label asp-for="CostCenter" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-3">
+                <input asp-for="CostCenter" class="form-control"/>
+            </div>
+            
+        </div>
+        <div class="form-group row">
+            <label asp-for="SubscriptionType" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-3">
+                <select asp-for="SubscriptionType" asp-items="Model.SubscriptionTypes" class="form-control"></select>
+            </div>
+            
+        </div>
+        <div class="form-group row">
+            <label asp-for="OwnerUpn" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-3">
+                <input asp-for="OwnerUpn" class="form-control"/>
+            </div>
+            
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
 

@@ -12,7 +12,15 @@ namespace CreateAzureSubscriptionPage.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var model = new SubscriptionRequest();
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Index(SubscriptionRequest model)
+        {
+            return RedirectToAction("About");
         }
 
         public IActionResult About()
