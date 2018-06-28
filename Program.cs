@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace CreateAzureSubscriptionPage_CSharp
+namespace CreateAzureSubscriptionPage
 {
     public class Program
     {

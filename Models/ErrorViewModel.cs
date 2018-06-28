@@ -1,6 +1,6 @@
 using System;
 
-namespace CreateAzureSubscriptionPage_CSharp.Models
+namespace CreateAzureSubscriptionPage.Models
 {
     public class ErrorViewModel
     {
