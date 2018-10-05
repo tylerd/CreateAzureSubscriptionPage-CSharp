@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/CreateAzureSubscriptionPage-CSharp.csproj"
+                "${workspaceFolder}/src/CreateAzureSubscriptionPage-CSharp.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
